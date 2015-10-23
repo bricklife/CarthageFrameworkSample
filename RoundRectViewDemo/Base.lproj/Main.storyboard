@@ -54,6 +54,14 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5HK-Zr-rIt">
+                                <rect key="frame" x="20" y="352" width="35" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Push"/>
+                                <connections>
+                                    <action selector="didPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GPF-X2-QAe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -64,6 +72,8 @@
                             <constraint firstItem="KSM-la-nCo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="OLz-xr-AkI"/>
                             <constraint firstItem="IxW-PG-fsR" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="QMX-tg-mA2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="KSM-la-nCo" secondAttribute="trailing" id="QVs-nU-Zi9"/>
+                            <constraint firstItem="5HK-Zr-rIt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="TV3-NK-r9g"/>
+                            <constraint firstItem="5HK-Zr-rIt" firstAttribute="top" secondItem="zsA-kf-WsJ" secondAttribute="bottom" constant="8" id="Twh-j8-5eu"/>
                             <constraint firstItem="zsA-kf-WsJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="WCd-4b-dGq"/>
                             <constraint firstItem="IxW-PG-fsR" firstAttribute="top" secondItem="KSM-la-nCo" secondAttribute="bottom" constant="8" id="iyl-c4-7g7"/>
                             <constraint firstItem="IxW-PG-fsR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="u1f-MD-Nrb"/>
@@ -74,6 +84,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="roundRectView" destination="zsA-kf-WsJ" id="BJN-Aa-Don"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

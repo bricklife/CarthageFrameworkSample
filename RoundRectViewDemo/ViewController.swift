@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import RoundRectView
 
 class ViewController: UIViewController {
+
+    @IBOutlet weak var roundRectView: RoundRectView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +23,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func didPush(sender: AnyObject) {
+        if self.roundRectView.cornerRadius > 0 {
+            self.roundRectView.cornerRadius = 0
+        } else {
+            self.roundRectView.cornerRadius = self.roundRectView.frame.size.height / 2
+        }
+    }
 
 }
 

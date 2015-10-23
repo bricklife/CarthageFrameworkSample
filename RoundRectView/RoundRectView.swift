@@ -9,20 +9,20 @@
 import UIKit
 
 @IBDesignable
-class RoundRectView: UIView {
+public class RoundRectView: UIView {
     
-    @IBInspectable var cornerRadius: CGFloat = 3.0 {
+    @IBInspectable public var cornerRadius: CGFloat = 3.0 {
         didSet {
             self.layer.cornerRadius = cornerRadius
         }
     }
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         self.initialize()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.initialize()
     }
